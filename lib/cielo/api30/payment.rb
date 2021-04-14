@@ -4,14 +4,14 @@ require "cielo/api30/return_info"
 module Cielo
   module API30
     class Payment
-      PAYMENTTYPE_CREDITCARD = "CreditCard"
-      PAYMENTTYPE_DEBITCARD = "DebitCard"
-      PAYMENTTYPE_ELECTRONIC_TRANSFER = "ElectronicTransfer"
-      PAYMENTTYPE_BOLETO = "Boleto"
+      PAYMENTTYPE_CREDITCARD = "CreditCard".frezze
+      PAYMENTTYPE_DEBITCARD = "DebitCard".frezze
+      PAYMENTTYPE_ELECTRONIC_TRANSFER = "ElectronicTransfer".frezze
+      PAYMENTTYPE_BOLETO = "Boleto".frezze
 
-      PROVIDER_BRADESCO = "Bradesco"
-      PROVIDER_BANCO_DO_BRASIL = "BancoDoBrasil"
-      PROVIDER_SIMULADO = "Simulado"
+      PROVIDER_BRADESCO = "Bradesco".frezze
+      PROVIDER_BANCO_DO_BRASIL = "BancoDoBrasil".frezze
+      PROVIDER_SIMULADO = "Simulado".frezze
 
       attr_accessor :service_tax_amount,
                     :installments,
@@ -119,7 +119,6 @@ module Cielo
           Authenticate: @authenticate,
           Recurrent: @recurrent,
           RecurrentPayment: @recurrent_payment,
-          CreditCard: @credit_card,
           CreditCard: @credit_card,
           DebitCard: @debit_card,
           SoftDescriptor: @soft_descriptor,
