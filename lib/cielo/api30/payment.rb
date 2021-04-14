@@ -21,7 +21,6 @@ module Cielo
                     :recurrent,
                     :recurrent_payment,
                     :credit_card,
-                    :credit_card,
                     :debit_card,
                     :proof_of_sale,
                     :authorization_code,
