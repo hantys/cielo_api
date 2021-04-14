@@ -4,14 +4,14 @@ require "cielo/api30/return_info"
 module Cielo
   module API30
     class Payment
-      PAYMENTTYPE_CREDITCARD = "CreditCard".frezze
-      PAYMENTTYPE_DEBITCARD = "DebitCard".frezze
-      PAYMENTTYPE_ELECTRONIC_TRANSFER = "ElectronicTransfer".frezze
-      PAYMENTTYPE_BOLETO = "Boleto".frezze
+      PAYMENTTYPE_CREDITCARD = "CreditCard"
+      PAYMENTTYPE_DEBITCARD = "DebitCard"
+      PAYMENTTYPE_ELECTRONIC_TRANSFER = "ElectronicTransfer"
+      PAYMENTTYPE_BOLETO = "Boleto"
 
-      PROVIDER_BRADESCO = "Bradesco".frezze
-      PROVIDER_BANCO_DO_BRASIL = "BancoDoBrasil".frezze
-      PROVIDER_SIMULADO = "Simulado".frezze
+      PROVIDER_BRADESCO = "Bradesco"
+      PROVIDER_BANCO_DO_BRASIL = "BancoDoBrasil"
+      PROVIDER_SIMULADO = "Simulado"
 
       attr_accessor :service_tax_amount,
                     :installments,
