@@ -73,7 +73,7 @@ module Cielo
         payment.recurrent = data["Recurrent"]
         payment.recurrent_payment = RecurrentPayment.from_json(data["RecurrentPayment"])
         payment.credit_card = CreditCard.from_json(data["CreditCard"]) if @type == "CreditCard"
-        payment.debit_card = CreditCard.from_json(data["CreditCard"]) if @type == "DebitCard"
+        payment.debit_card = CreditCard.from_json(data["DebitCard"]) if @type == "DebitCard"
         payment.proof_of_sale = data["ProofOfSale"]
         payment.authorization_code = data["AuthorizationCode"]
         payment.soft_descriptor = data["SoftDescriptor"]
